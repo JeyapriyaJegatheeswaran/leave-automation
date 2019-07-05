@@ -17,10 +17,20 @@ public class DashboardPage extends PageBase {
   private static By dashboardMenu = By.xpath("//*[@id=\"sidebar\"]/ul/li[1]");
   private static By profiledMenu = By.xpath("//*[@id=\"sidebar\"]/ul/li[2]");
   private static By leaveMenu = By.xpath("//*[@id=\"sidebar\"]/ul/li[3]");
+
   private static By manageEpmloyeeMenu = By.xpath("//*[@id=\"sidebar\"]/ul/li[4]");
+  private static By manageRecuritmentSubMenu = By.xpath("//*[@id=\"page2\"]/ul/li[1]");
+  private static By manageDesignationSubMenu = By.xpath("//*[@id=\"page2\"]/ul/li[2]");
+
   private static By manageLeaveMenu = By.xpath("//*[@id=\"sidebar\"]/ul/li[5]");
+  private static By manageLeaveTypeSubMenu = By.xpath("//*[@id=\"page3\"]/ul/li[2]");
+
   private static By manageUserMenu = By.xpath("//*[@id=\"sidebar\"]/ul/li[6]");
+  private static By userRoleSubMenu = By.xpath("//*[@id=\"page4\"]/ul/li[1]");
+
   private static By settingMenu = By.xpath("//*[@id=\"sidebar\"]/ul/li[7]");
+
+
 
 
   public static void clickDashboardMenu() {
@@ -44,32 +54,23 @@ public class DashboardPage extends PageBase {
   public static void clickSettingMenu() {
     getDriver().findElement(settingMenu).click();
   }
+  public static void clickUserRoleSubMenu() {
+    getDriver().findElement(userRoleSubMenu).click();
+  }
+  public static void clickManageRecuritmentSubMenu() {
+    getDriver().findElement(manageRecuritmentSubMenu).click();
+  }
+  public static void clickManageDesignationSubMenu() {
+    getDriver().findElement(manageDesignationSubMenu).click();
+  }
+  public static void clickManageLeaveTypeSubMenu() {
+    getDriver().findElement(manageLeaveTypeSubMenu).click();
+  }
 
-//  public static boolean isLoginPageDisplay() {
-//
-//    return getDriver().findElement(hdrLogin).isDisplayed();
-//  }
-//
-//  public static void setUserName(String userName) {
-//
-//    getDriver().findElement(txtUserName).sendKeys(userName);
-//  }
-//
-//  public static void setPassword(String password) {
-//    getDriver().findElement(txtPassword).sendKeys(password);
-//  }
-//
-//  public static void clickLogin() {
-//    getDriver().findElement(btnLogin).click();
-//  }
-//
-//  public static boolean isLoginAlertDisplay() {
-//    return getDriver().findElement(alert).isDisplayed();
-//  }
-//
-//  public static String getLoginAlert() {
-//    return  getDriver().findElement(alert).getText();
-//  }
+  public static boolean isDashboardPageDisplay() {
+
+    return getDriver().findElement(hdrDashboard).isDisplayed();
+  }
 
 
 
