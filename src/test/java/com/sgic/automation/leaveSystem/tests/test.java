@@ -9,7 +9,7 @@ public class test extends TestBase {
     @Test
 
     public void first() {
-        DashboardPage.cl
+//        DashboardPage.cl
 
     }
 }
