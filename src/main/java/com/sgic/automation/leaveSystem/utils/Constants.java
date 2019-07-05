@@ -1,6 +1,4 @@
-package com.sgic.automation.orangehrm.utils;
-
-import org.openqa.selenium.By;
+package com.sgic.automation.leaveSystem.utils;
 
 public class Constants {
     public static final String UBUNTU = "ubuntu";

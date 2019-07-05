@@ -1,4 +1,4 @@
-package com.sgic.automation.orangehrm.utils;
+package com.sgic.automation.leaveSystem.utils;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

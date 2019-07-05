@@ -1,6 +1,6 @@
-package com.sgic.automation.orangehrm.pages;
+package com.sgic.automation.leaveSystem.pages;
 
-import com.sgic.automation.orangehrm.utils.PageBase;
+import com.sgic.automation.leaveSystem.utils.PageBase;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.testng.asserts.SoftAssert;

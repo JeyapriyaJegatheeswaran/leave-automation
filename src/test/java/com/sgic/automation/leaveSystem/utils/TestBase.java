@@ -1,4 +1,4 @@
-package com.sgic.automation.orangehrm.utils;
+package com.sgic.automation.leaveSystem.utils;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;

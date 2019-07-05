@@ -1,4 +1,4 @@
-package com.sgic.automation.orangehrm.utils;
+package com.sgic.automation.leaveSystem.utils;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -11,7 +11,7 @@ import java.util.Date;
 /**test for performance functionality
  * @Author Jeyapriya
  */
-public class ExtentReportFunctions extends PageBase{
+public class ExtentReportFunctions extends PageBase {
 
 	private static String screenShotFolderPath = System.getProperty("user.dir") + "/src/test/resources/screenshots/";
 

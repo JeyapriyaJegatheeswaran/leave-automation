@@ -4,7 +4,7 @@
 
     <test name="PERFORMANCE">
         <classes>
-<!--            <class name="com.sgic.automation.orangehrm.tests.performance.AddKPIs"/>-->
+<!--            <class name="com.sgic.automation.leaveSystemem.tests.performance.AddKPIs"/>-->
 
 
       </classes>
