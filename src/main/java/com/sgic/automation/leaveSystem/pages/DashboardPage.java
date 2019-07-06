@@ -20,7 +20,7 @@ public class DashboardPage extends PageBase {
 
   private static By manageEpmloyeeMenu = By.xpath("//*[@id=\"sidebar\"]/ul/li[4]");
   private static By manageRecuritmentSubMenu = By.xpath("//*[@id=\"page2\"]/ul/li[1]");
-  private static By manageDesignationSubMenu = By.xpath("//*[@id=\"page2\"]/ul/li[2]");
+  private static By manageDesignationSubMenu = By.xpath("//*[@href=\"/designation\"]");
 
   private static By manageLeaveMenu = By.xpath("//*[@id=\"sidebar\"]/ul/li[5]");
   private static By manageLeaveTypeSubMenu = By.xpath("//*[@id=\"page3\"]/ul/li[2]");

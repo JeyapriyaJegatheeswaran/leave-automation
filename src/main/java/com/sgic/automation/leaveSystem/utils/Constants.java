@@ -9,6 +9,8 @@ public class Constants {
 
 //login credentials
     public static final String OrgUserName = "Admin";
+    public static final String EmptyLeaveType = "Admin";
+    public static final String SpicelCharaterLeaveType = "1256.',;;;p''][*/--";
     public static final String OrgPassword = "admin123";
 
     //Employee login credentials

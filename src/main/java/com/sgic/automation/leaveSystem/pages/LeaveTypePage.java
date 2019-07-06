@@ -14,10 +14,16 @@ public class LeaveTypePage extends PageBase {
     private static By EnterLeaveType = By.id("exampleForm.ControlTextarea1");
     private static By SaveButton =By.xpath("//*[@class='modal-footer']//*[text()='Save']");
     private static By SuccessfullButton=By.xpath("//*[@class=\"swal-button swal-button--confirm\"]");
+    private static By CancelButton=By.xpath("//*[@variant]");
 
     public static boolean isDisplayhdleaveDashboard(){
         return getDriver().findElement(hdleaveDashboard).isDisplayed();
 
+    }
+    public static void clickCancelButtonClick() {
+
+        getDriver().findElement(CancelButton).click();
+        LOGGER.info("****CancelButtonClick***** ");
     }
     public static void clickAddButtonClick() {
 
