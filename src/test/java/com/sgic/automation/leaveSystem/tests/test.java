@@ -9,9 +9,13 @@ public class test extends TestBase {
     @Test
 
     public void first() {
-        DashboardPage.isDashboardPageDisplay();
-        DashboardPage.clickLanageUserMenu();
-        DashboardPage.clickUserRoleSubMenu();
+
+//        DashboardPage.cl
+
+//        DashboardPage.isDashboardPageDisplay();
+//        DashboardPage.clickLanageUserMenu();
+//        DashboardPage.clickUserRoleSubMenu();
+
 
     }
 }

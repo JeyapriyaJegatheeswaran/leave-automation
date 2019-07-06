@@ -3,13 +3,11 @@ package com.sgic.automation.leaveSystem.utils;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+import com.sgic.automation.leaveSystem.pages.DashboardPage;
 import org.apache.log4j.Logger;
 
 import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
@@ -47,6 +45,11 @@ public class TestBase extends PageBase {
     public void nameBefore(Method method) {
 
         LOGGER.info("Test name: " + method.getName());
+    }
+    @BeforeClass
+    public void login(){
+//        DashboardPage.clickManageLeaveMenu();
+//        DashboardPage.clickManageLeaveTypeSubMenu();
     }
     @AfterMethod(alwaysRun=true)
     public void endTest(ITestResult result){
