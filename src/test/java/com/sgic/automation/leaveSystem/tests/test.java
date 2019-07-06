@@ -10,6 +10,12 @@ public class test extends TestBase {
 
     public void first() {
 
+//        DashboardPage.cl
+
+//        DashboardPage.isDashboardPageDisplay();
+//        DashboardPage.clickLanageUserMenu();
+//        DashboardPage.clickUserRoleSubMenu();
+
 
     }
 }

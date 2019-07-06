@@ -1,18 +1,16 @@
-package com.sgic.automation.leaveSystem.tests.LeaveTypeTest;
+package com.sgic.automation.leaveSystem.tests;
 
 import com.relevantcodes.extentreports.LogStatus;
 import com.sgic.automation.leaveSystem.pages.DashboardPage;
 import com.sgic.automation.leaveSystem.pages.LeaveTypePage;
-import com.sgic.automation.leaveSystem.testData.LeaveTestDatas;
 import com.sgic.automation.leaveSystem.utils.Constants;
-import com.sgic.automation.leaveSystem.utils.TestBase;;
-import org.apache.log4j.Logger;
+import com.sgic.automation.leaveSystem.utils.TestBase;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
+import org.testng.log4testng.Logger;
 
 public class LeaveTypeTest extends TestBase {
-    private static final org.apache.log4j.Logger LOGGER = Logger.getLogger(LeaveTypeTest.class);
+    private static final Logger LOGGER = Logger.getLogger(LeaveTypeTest.class);
     @Test(priority = 1)
     public void SaveUserTest(){
         softAssert = new SoftAssert();
@@ -22,7 +20,7 @@ public class LeaveTypeTest extends TestBase {
         DashboardPage.clickManageLeaveTypeSubMenu();
         LOGGER.info("DashBoardPage is Submenu Leave type CLick");
         LeaveTypePage.clickAddButtonClick();
-//        LeaveTypePage.setLeaveType(Constants.OrgUserName);
+        LeaveTypePage.setLeaveType(Constants.OrgUserName);
         LeaveTypePage.clickSaveButtonClick();
         LeaveTypePage.implicitWait(3);
 //        LeaveTypePage.click_ok_Button();
@@ -50,9 +48,8 @@ public class LeaveTypeTest extends TestBase {
         extentReport.endTest(extentTest);
         softAssert.assertAll();
     }
-    @Test( groups = "REGRESSION",priority = 4, dataProvider = "TestData", dataProviderClass = LeaveTestDatas.class)
-
-    public void specialcharaterLeaveTypeTest(String txttype){
+    @Test(priority = 3)
+    public void specialcharaterLeaveTypeTest(){
         softAssert = new SoftAssert();
         extentTest=extentReport.startTest("EmptyLeaveType");
         DashboardPage.clickManageLeaveMenu();
@@ -60,7 +57,7 @@ public class LeaveTypeTest extends TestBase {
         DashboardPage.clickManageLeaveTypeSubMenu();
         LOGGER.info("DashBoardPage is Submenu Leave type CLick");
         LeaveTypePage.clickAddButtonClick();
-        LeaveTypePage.setLeaveType(txttype);
+        LeaveTypePage.setLeaveType(Constants.SpicelCharaterLeaveType );
         LOGGER.info("Enter The specialcharater");
         LeaveTypePage.clickSaveButtonClick();
         LeaveTypePage.implicitWait(3);
@@ -69,27 +66,6 @@ public class LeaveTypeTest extends TestBase {
         extentTest.log(LogStatus.PASS, " library management system : ");
         extentReport.endTest(extentTest);
         softAssert.assertAll();
-    }
-
-    @Test( groups = "REGRESSION",priority = 4, dataProvider = "TestData", dataProviderClass = LeaveTestDatas.class)
-    public void XcelLeaveTypeTest(String txttype){
-
-//        softAssert = new SoftAssert();
-//        extentTest=extentReport.startTest("LeaveTestData");
-        DashboardPage.clickManageLeaveMenu();
-        LOGGER.info("DashBoardPage is menu CLick");
-        DashboardPage.clickManageLeaveTypeSubMenu();
-        LOGGER.info("DashBoardPage is Submenu Leave type CLick");
-        LeaveTypePage.clickAddButtonClick();
-        LeaveTypePage.setLeaveType(txttype);
-        LOGGER.info("Enter The specialcharater");
-        LeaveTypePage.clickSaveButtonClick();
-//        LeaveTypePage.implicitWait(3);
-////        LeaveTypePage.click_ok_Button();
-//        LeaveTypePage.clickCancelButtonClick();
-//        extentTest.log(LogStatus.PASS, " library management system : ");
-//        extentReport.endTest(extentTest);
-//        softAssert.assertAll();
     }
 
 }
