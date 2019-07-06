@@ -3,9 +3,10 @@ package com.sgic.automation.leaveSystem.utils;
 public class Constants {
     public static final String UBUNTU = "ubuntu";
     public static final String WINDOWS = "windows";
-//
+
     public static final String CHROME = "chrome";
     public static final String FIREFOX = "firefox";
+
 
 //login credentials
     public static final String OrgUserName = "Admin";
@@ -44,4 +45,5 @@ public class Constants {
 
 //add job title_Recruitment
     public static final String RecruitmentJobTitle = "QA Engineer";
+
 }

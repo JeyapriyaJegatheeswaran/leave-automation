@@ -20,7 +20,9 @@ public class DashboardPage extends PageBase {
 
   private static By manageEpmloyeeMenu = By.xpath("//*[@id=\"sidebar\"]/ul/li[4]");
   private static By manageRecuritmentSubMenu = By.xpath("//*[@id=\"page2\"]/ul/li[1]");
+
   private static By manageDesignationSubMenu = By.xpath("//*[@href=\"/designation\"]");
+
 
   private static By manageLeaveMenu = By.xpath("//*[@id=\"sidebar\"]/ul/li[5]");
   private static By manageLeaveTypeSubMenu = By.xpath("//*[@id=\"page3\"]/ul/li[2]");
@@ -44,7 +46,7 @@ public class DashboardPage extends PageBase {
   }
   public static void clickManageEpmloyeeMenu() {
     getDriver().findElement(manageEpmloyeeMenu).click();
-  }
+    LOGGER.info("Click Manage Employee " ); }
   public static void clickManageLeaveMenu() {
     getDriver().findElement(manageLeaveMenu).click();
   }
@@ -62,7 +64,7 @@ public class DashboardPage extends PageBase {
   }
   public static void clickManageDesignationSubMenu() {
     getDriver().findElement(manageDesignationSubMenu).click();
-  }
+    LOGGER.info("Click Designation " ); }
   public static void clickManageLeaveTypeSubMenu() {
     getDriver().findElement(manageLeaveTypeSubMenu).click();
   }

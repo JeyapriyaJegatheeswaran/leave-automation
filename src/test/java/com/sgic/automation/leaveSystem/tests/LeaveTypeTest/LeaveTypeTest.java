@@ -22,7 +22,7 @@ public class LeaveTypeTest extends TestBase {
         DashboardPage.clickManageLeaveTypeSubMenu();
         LOGGER.info("DashBoardPage is Submenu Leave type CLick");
         LeaveTypePage.clickAddButtonClick();
-        LeaveTypePage.setLeaveType(Constants.OrgUserName);
+//        LeaveTypePage.setLeaveType(Constants.OrgUserName);
         LeaveTypePage.clickSaveButtonClick();
         LeaveTypePage.implicitWait(3);
 //        LeaveTypePage.click_ok_Button();
