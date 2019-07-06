@@ -15,19 +15,18 @@ import org.testng.annotations.Test;
 public class AddDesignationTest extends TestBase {
     private static final Logger LOGGER = Logger.getLogger(AddDesignationTest.class);
 
-@Test
+@Test(testName = "Add Designation")
 public void addDesignation(){
-
+    extentTest =extentReport.startTest("Add Designation");
     DashboardPage.clickManageEpmloyeeMenu();
     DashboardPage.implicitWait(4);
     DashboardPage.clickManageDesignationSubMenu();
     AddDesignationPage.Desplay_Designation_Add_Button();
-    //LOGGER.info("DesignationPageDisplay " );
     AddDesignationPage.Click_Add_Designation_Button();
     AddDesignationPage.Click_Add_Designation_Field();
     AddDesignationPage.Add_Designation_Field();
     AddDesignationPage.Save_Designation_Button();
-
+    extentReport.endTest(extentTest);
 
 
 }
