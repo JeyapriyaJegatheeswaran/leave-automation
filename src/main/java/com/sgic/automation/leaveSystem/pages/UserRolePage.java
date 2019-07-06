@@ -30,12 +30,21 @@ public class UserRolePage extends PageBase {
         return getDriver().findElement(addedRole).isDisplayed();
     }
     public static void clickAddRoleButton() {
+
         getDriver().findElement(addRoleBtn).click();
     }
-    public static void sentRoleName() {
-        getDriver().findElement(roleNameField).sendKeys("jeyapriya");
+    public static void sentRoleName(String roleName)
+    {
+        getDriver().findElement(roleNameField).sendKeys(roleName);
     }
     public static void clickAddRoleSaveButton() {
         getDriver().findElement(addRoleSaveBtn).click();
+    }
+
+    public static void addRoleName(String roleName) {
+        UserRolePage.clickAddRoleButton();
+        UserRolePage.sentRoleName(roleName);
+        UserRolePage.clickAddRoleSaveButton();
+        UserRolePage.isAddedRoleDisplay();
     }
 }

@@ -10,18 +10,18 @@ public class AddUserRole extends ExcelDataConfig {
             ("src\\test\\resources\\ExcelSheet\\OrangeHrm.xlsx");
 
     }
-    @DataProvider(name = "AttendanceRecord")
-    public Object[][] AttendanceRecord() {
+    @DataProvider(name = "addRole")
+    public Object[][] addRole() {
 
-        int rows = getRowCount("AttendanceRecord");
-        int col = getColumnCount("AttendanceRecord");
+        int rows = getRowCount("AddRole");
+        int col = getColumnCount("AddRole");
 
         LOGGER.info("row = "+ rows + " columns = "+ col);
 
         Object[][] data = new Object[rows][col];
         for (int i = 1; i <= rows; i++) {
             for (int j = 0; j < col; j++) {
-                data[i - 1][j] = getData("AttendanceRecord", i, j);
+                data[i - 1][j] = getData("AddRole", i, j);
             }
         }
         return data;
