@@ -48,7 +48,7 @@ public class TestBase extends PageBase {
     }
     @BeforeClass
     public void login(){
-        DashboardPage.clickManageLeaveMenu();
+//        DashboardPage.clickManageLeaveMenu();
 //        DashboardPage.clickManageLeaveTypeSubMenu();
     }
     @AfterMethod(alwaysRun=true)
