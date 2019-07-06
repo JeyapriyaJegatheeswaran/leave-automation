@@ -1,10 +1,11 @@
 package com.sgic.automation.leaveSystem.pages.Designation;
 
+import com.relevantcodes.extentreports.LogStatus;
 import com.sgic.automation.leaveSystem.utils.PageBase;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 
-import static com.sun.xml.internal.ws.spi.db.BindingContextFactory.LOGGER;
+
 
 /**
  * @author Thusya
@@ -30,15 +31,13 @@ public class AddDesignationPage extends PageBase {
     public static void  Click_Add_Designation_Field(){
         getDriver().findElement(Add_Designation_Field).click();
         LOGGER.info("ClickDesignation_Add_Fiend " );}
-    public static void Add_Designation_Field(){
-        getDriver().findElement(Add_Designation_Field).sendKeys("QA Engineer");
+    public static void Add_designation_Field(String designation){
+        getDriver().findElement(Add_Designation_Field).sendKeys(designation);
         LOGGER.info("ADDDesignation_Add_Fiend" );}
     public static void Save_Designation_Button(){getDriver().findElement(Save_Designation_Button).click();
         LOGGER.info("Save Designation");}
 
-
-
-
-
-
+     public static void AddDesignationForm(String designation){
+        AddDesignationPage.Add_designation_Field(designation);
+     }
 }
