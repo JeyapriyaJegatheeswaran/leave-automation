@@ -18,7 +18,9 @@ public class RecruitmentTypePage extends PageBase {
     private static By addrecruitmentformclosebtn  = By.xpath("//*[@class=\"btn btn-danger \"]");
     private static By editrecruitmentbtn  = By.xpath("//*[@class=\"btn btn-danger \"]");
     private static By emptyverificationmessage  = By.xpath("//*[text()='Recruitment type cannot be Empty']");
+
     // private static By alreadyexistverificationmessage  = By.xpath("//*[text()='Recruitment type Already exist']");
+
 
 
     public static boolean isRecruitmentPageDisplay(){
