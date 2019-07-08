@@ -29,8 +29,5 @@ public class AddNewRole extends TestBase {
         extentTest.log(LogStatus.PASS, "Added data  is displayed");
         extentReport.endTest(extentTest);
         softAssert.assertAll();
-
-
-
     }
 }
