@@ -22,8 +22,8 @@ public class DashboardPage extends PageBase {
   private static By manageRecuritmentSubMenu = By.xpath("//*[@id=\"page2\"]/ul/li[1]");
   private static By manageDesignationSubMenu = By.xpath("//*[@href=\"/designation\"]");
 
-  private static By manageLeaveMenu = By.xpath("//*[@id=\"sidebar\"]/ul/li[5]");
-  private static By manageLeaveTypeSubMenu = By.xpath("//*[@id=\"page3\"]/ul/li[2]");
+  private static By manageLeaveMenu = By.xpath("//*[@id=\"sidebar\"]/ul/li[5]/a/span");
+  private static By manageLeaveTypeSubMenu = By.xpath("//*[@href=\"/configleave\"]");
 
   private static By manageUserMenu = By.xpath("//*[@id=\"sidebar\"]/ul/li[6]");
   private static By userRoleSubMenu = By.xpath("//*[@id=\"page4\"]/ul/li[1]");
