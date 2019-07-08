@@ -1,4 +1,4 @@
-package com.sgic.automation.leaveSystem.tests;
+package com.sgic.automation.leaveSystem.tests.LeaveType;
 
 import com.relevantcodes.extentreports.LogStatus;
 import com.sgic.automation.leaveSystem.pages.DashboardPage;
